@@ -62,7 +62,7 @@ body{
 .header_description_block{
     display: flex;
     align-items: end;
-    background-image: url(/resources/img_header.jpg);
+    background-image: url(../resources/img_header.jpg);
     height: 500px;
     margin-top: 30px;
 }
