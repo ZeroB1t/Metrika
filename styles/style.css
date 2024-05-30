@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
+
 body{
     font-family: "Manrope", sans-serif;
     letter-spacing: -0.03em;
@@ -130,7 +134,7 @@ body{
     margin-bottom: 0;
 }
 
-.heading_project_card{
+.heading_project_card, .heading_h3{
     text-transform: uppercase;
     font-size: 30px;
     letter-spacing: -0.03em;
@@ -162,4 +166,48 @@ body{
 .btn_more_projects:hover{
     background-color: #ad1818;
     color: #fff;
+}
+
+/* Стили для блока Services */
+
+.services{
+    padding: 150px 0;
+    background-color: #121212;
+}
+
+.heading_services_block{
+    color: #fff;
+}
+
+.heading_services_card{
+    letter-spacing: -0.03em;
+}
+
+.heading_services_card{
+    color: #fff;
+}
+
+.card_services{
+    margin-bottom: 60px;
+}
+
+.card_services:last-child{
+    margin-bottom: 0;
+}
+
+.photo_block{
+    /* height: 717px; */
+    background-image: url(../resources/img_photo_block.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 575px 0 60px;
+}
+
+.photo_block_title{
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    max-width: 443px;
 }
