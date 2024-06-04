@@ -64,18 +64,20 @@ body{
 }
 
 .header_description_block{
-    display: flex;
-    align-items: end;
+    position: relative;
     background-image: url(../resources/img_header.jpg);
     height: 500px;
     margin-top: 30px;
 }
 
 .description{
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
     font-size: 20px;
     color: #fff;
     max-width: 430px;
-    margin: 40px;
+    /* margin: 40px; */
     line-height: 30px;
 }
 
@@ -196,18 +198,90 @@ body{
 }
 
 .photo_block{
-    /* height: 717px; */
+    position: relative;
+    height: 717px;
     background-image: url(../resources/img_photo_block.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding: 575px 0 60px;
+    margin-bottom: 150px;
 }
 
 .photo_block_title{
+    position: absolute;
+    bottom: 60px;
     font-weight: 400;
     font-size: 30px;
     line-height: 40px;
     letter-spacing: -0.03em;
     color: #fff;
     max-width: 443px;
+}
+
+/* Стили для Contacts */
+
+.contacts{
+    margin-bottom: 150px;
+}
+
+.heading_contacts{
+
+}
+
+.heading_contacts:before{
+    display: block;
+    content: '';
+    width: 24px;
+    height: 24px;
+    margin-bottom: 12px;
+    background-image: url(/resources/phone-logo.png);
+    background-repeat: no-repeat;
+}
+
+.interactive_contact{
+    display: block;
+    line-height: 1; 
+    font-size: 60px;
+    letter-spacing: -0,03em;
+    color: #121212;
+    text-decoration: none;
+    transition: all 3ms ease-in;
+}
+
+.interactive_contact_number{
+    max-width: 480px;
+    margin-bottom: 30px;
+}
+.interactive_contact_email{
+    max-width: 412px;
+}
+
+.interactive_contact:hover{
+    border-bottom: 2px solid #121212;
+    opacity: 0.5;
+}
+
+/* Стили footer */
+
+.footer{
+    color: #fff;
+    background-color: #121212;
+    text-align: center;
+    justify-content: center;
+}
+
+.footer_wrapper{
+    padding: 60px 0 30px 0;
+}
+
+.footer .menu{
+    margin-bottom: 87px;
+}
+
+.footer .menu_list{
+    justify-content: center;
+}
+
+.footer .menu_list_link_item{
+    text-decoration: none;
+    color: #fff;
 }
